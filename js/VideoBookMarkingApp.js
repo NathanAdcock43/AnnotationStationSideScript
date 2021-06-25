@@ -196,6 +196,18 @@ $(document).ready(function () {
         });
     }
 
+    function getSectio(val){
+        $.ajax({
+            url: '',
+            type: 'post',
+            data: {user_id : $("#user_id").val(), title : $("#collections").val(), is_private : 1, description : "Enter your Collection Description here", image : "https://lakelandescaperoom.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg"},
+            success: function(data){
+                console.log(data.id);
+
+            }
+
+        });
+    }
 
 
 
